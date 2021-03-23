@@ -1,0 +1,62 @@
+.app-container {
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+:root {
+	--timer-background-color: #FFFFFF;
+--timer-border: 1px solid #000000;
+	--timer-height: 70%;
+	--timer-width: 70%;
+}
+
+body, div, p {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--timer-height: 100%;
+		--timer-width: 100%;
+}
+
+}
+
+.timer-container {
+	background-color: var(--timer-background-color);
+	border: var(--timer-border);
+	height: var(--timer-height);
+	width: var(--timer-width);
+}
+
+:root {
+  
+
+  --button-border: 3px solid #000000;
+  --button-text-size: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+   
+  
+
+    --button-text-size: 4em;
+  }
+}
+
+.button-container {
+  flex: 1 1 auto;
+  text-align: center;
+  margin: 0px 20px;
+  border: var(--button-border);
+  font-size: var(--button-text-size);
+}
+
+.button-container:hover {
+  cursor: pointer;
+}
